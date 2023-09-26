@@ -44,7 +44,7 @@ class L2Norm(nn.Module):
     def forward(self, x):
         x = F.normalize(x, dim=1)
         scale = self.weight[None, :, None, None]
-        print(scale)
+        #print(scale)
         return scale * x
 
 
