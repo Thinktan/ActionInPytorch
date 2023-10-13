@@ -28,6 +28,7 @@ class VGG16(nn.Module):
             return nn.Sequential(*layers)
 
 
+
 class L2Norm(nn.Module):
     # scale/weight是一个需要训练的参数
     def __init__(self, in_features, scale):
